@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapingGorilla.Metrics", "src\Metrics\LeapingGorilla.Metrics.csproj", "{2B962CFD-81C4-4C77-9714-C8265751F477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapingGorilla.Metrics.UnitTests", "src\Metrics.Tests\LeapingGorilla.Metrics.UnitTests.csproj", "{BCE2A941-243E-4CFA-B283-588AD04FC793}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B962CFD-81C4-4C77-9714-C8265751F477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B962CFD-81C4-4C77-9714-C8265751F477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B962CFD-81C4-4C77-9714-C8265751F477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B962CFD-81C4-4C77-9714-C8265751F477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE2A941-243E-4CFA-B283-588AD04FC793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE2A941-243E-4CFA-B283-588AD04FC793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE2A941-243E-4CFA-B283-588AD04FC793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE2A941-243E-4CFA-B283-588AD04FC793}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
