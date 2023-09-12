@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using Prometheus;
 
 namespace LeapingGorilla.Metrics
 {
@@ -33,17 +32,6 @@ namespace LeapingGorilla.Metrics
         /// Lower ErrorMargins take more resources (memory & CPU) to calculate.
         /// </summary>
         public double ErrorMargin { get; }
-
-        /// <summary>
-        /// Convert this SummaryObjective to a <see cref="QuantileEpsilonPair"/> which
-        /// is natively used by the underlying Prometheus library. This method should
-        /// not be called outside of the LeapingGorilla.Metrics library.
-        /// </summary>
-        /// <returns></returns>
-        internal QuantileEpsilonPair ToQuantileEpsilonPair()
-        {
-            return new QuantileEpsilonPair(Quantile, ErrorMargin);
-        }
         
         /// <summary>
         /// Create a new summary objective with the given Quantile and Error Margin

@@ -1,4 +1,5 @@
-﻿using LeapingGorilla.Testing.Core.Attributes;
+﻿using LeapingGorilla.Metrics.Prometheus;
+using LeapingGorilla.Testing.Core.Attributes;
 using LeapingGorilla.Testing.NUnit;
 
 namespace LeapingGorilla.Metrics.UnitTests
@@ -9,7 +10,7 @@ namespace LeapingGorilla.Metrics.UnitTests
         public static readonly string DefaultMetricDescription = "Test Metric created by unit tests";
 
         [ItemUnderTest]
-        public MetricFactory MetricFactory { get; set; }
+        public PrometheusMetricFactory MetricFactory { get; set; }
 
         [Dependency]
         public string ApplicationName { get; set; }

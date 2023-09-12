@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;netstandard2.0;</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>LeapingGorilla.Metrics.UnitTests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <Company>Leaping Gorilla LTD</Company>
+        <Product>Metrics - Prometheus</Product>
+        <Description>Prometheus support for written metrics</Description>
+        <Version>1.0.0</Version>
+        <RepositoryUrl>https://github.com/LeapingGorillaLtd/Metrics</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="prometheus-net" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Metrics\LeapingGorilla.Metrics.csproj" />
+    </ItemGroup>
+
+</Project>

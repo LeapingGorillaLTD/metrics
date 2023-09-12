@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Linq;
 
-namespace LeapingGorilla.Metrics
+namespace LeapingGorilla.Metrics.Prometheus
 {
     /// <inheritdoc cref="ICounter" />
     public class Counter : Metric, ICounter
 	{
-		private readonly Prometheus.Counter _ctr;
+		private readonly global::Prometheus.Counter _ctr;
 
         public double Value => _ctr.Value;
 
-		public Counter(Prometheus.Counter ctr, string nameInStorageSystem, string description) 
+		public Counter(global::Prometheus.Counter ctr, string nameInStorageSystem, string description) 
             :base(nameInStorageSystem, description)
 		{
 			_ctr = ctr;

@@ -1,16 +1,16 @@
 ﻿using System;
 using Prometheus;
 
-namespace LeapingGorilla.Metrics
+namespace LeapingGorilla.Metrics.Prometheus
 {
     /// <inheritdoc cref="IGauge" />
 	public class Gauge : Metric, IGauge
 	{
-		private readonly Prometheus.Gauge _gauge;
+		private readonly global::Prometheus.Gauge _gauge;
 
         public double Value => _gauge.Value;
 
-		public Gauge(Prometheus.Gauge gauge, string nameInStorageSystem, string description) 
+		public Gauge(global::Prometheus.Gauge gauge, string nameInStorageSystem, string description) 
             :base(nameInStorageSystem, description)
 		{
 			_gauge = gauge;

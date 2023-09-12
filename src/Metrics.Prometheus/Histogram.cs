@@ -1,11 +1,11 @@
-﻿namespace LeapingGorilla.Metrics
+﻿namespace LeapingGorilla.Metrics.Prometheus
 {
     /// <inheritdoc cref="IHistogram" />
     public class Histogram : Metric, IHistogram
     {
-        private readonly Prometheus.Histogram _histogram;
+        private readonly global::Prometheus.Histogram _histogram;
 
-        public Histogram(Prometheus.Histogram histogram, string nameInStorageSystem, string description) 
+        public Histogram(global::Prometheus.Histogram histogram, string nameInStorageSystem, string description) 
             : base(nameInStorageSystem, description)
         {
             _histogram = histogram;

@@ -1,11 +1,11 @@
-﻿namespace LeapingGorilla.Metrics
+﻿namespace LeapingGorilla.Metrics.Prometheus
 {
     /// <inheritdoc cref="ISummary" />
     public class Summary : Metric, ISummary
     {
-        private readonly Prometheus.Summary _summary;
+        private readonly global::Prometheus.Summary _summary;
 
-        public Summary(Prometheus.Summary summary, string nameInStorageSystem, string description) 
+        public Summary(global::Prometheus.Summary summary, string nameInStorageSystem, string description) 
             : base(nameInStorageSystem, description)
         {
             _summary = summary;
